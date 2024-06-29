@@ -5,6 +5,7 @@
 #include "judge.hpp"
 #include "gomoku.hpp"
 #include "keyboard.hpp"
+#include "safety.hpp"
 
 struct temp 
 {
@@ -19,6 +20,8 @@ private:
     Judge m_judge;
     Keyboard m_keyboard;
     gomoku_p temp;
+    safety m_safety;
+    
     int player;
 
 public:

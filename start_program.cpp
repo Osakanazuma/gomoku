@@ -38,7 +38,7 @@ void StartProgram::game()
         m_gomoku.masume(player);
         if( m_judge.win_judge(player,m_gomoku.m_masu)|| m_judge.draw_judge(m_gomoku.m_masu))
         {
-            system("stty sane");
+            m_safety.reset_terminal_settings();
             break;
         }
         player = (player == 1) ? 2 : 1;
