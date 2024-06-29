@@ -2,9 +2,6 @@
 
 StartProgram::StartProgram() : player(1)
 {
-    m_judge = Judge();
-    m_keyboard = Keyboard();
-    temp = gomoku_p();
 }
 
 void StartProgram::game()
