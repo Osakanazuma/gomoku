@@ -5,6 +5,7 @@ linux環境でしか、操作確認をしていませんが他のOSでも動か�
 そして、シェルをつかうととても楽でいいですよ^^
 
 ## cmake.sh
+```
 PROJECT_DIR="../gomoku"
 BUILD_DIR="$PROJECT_DIR/build"
 
@@ -21,13 +22,14 @@ if [ $? -eq 0 ]; then
 else
     echo "Build failed!"
 fi
-
+```
 ## run.sh
+```
 EXECUTABLE_PATH="build/Gomoku"
 
 echo "Running CMake..."
 $EXECUTABLE_PATH
-
+```
 これを追加できたら
 sh cmake.sh （コンパイル）
 sh run.sh   （実行）
