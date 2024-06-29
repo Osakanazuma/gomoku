@@ -6,7 +6,7 @@ StartProgram::StartProgram() : player(1)
 
 void StartProgram::game()
 { 
-    system("clear"); // ここで画面をクリア
+    std::cout << "\033[2J\033[1;1H";  // ここで画面をクリア
     m_gomoku.masume(player);
     while (true)
     {
