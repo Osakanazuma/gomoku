@@ -19,7 +19,7 @@ private:
 
     int m_time;
     gomoku_p gomoku_pb;
-    int x = 0, y = 0;   
+    int x, y;   
 public:
     int m_masu[Y_NUMBER][X_NUMBER] = {{0}};
     Gomoku();
