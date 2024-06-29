@@ -1,8 +1,11 @@
 #include "start_program.hpp"
 
-StartProgram::StartProgram() 
+StartProgram::StartProgram() : player(1)
 {
-    player = 1;
+    m_gomoku = Gomoku();
+    m_judge = Judge();
+    m_keyboard = Keyboard();
+    temp = gomoku_p();
 }
 
 void StartProgram::game()
