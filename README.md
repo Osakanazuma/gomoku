@@ -22,7 +22,7 @@ else
     echo "Build failed!"
 fi
 
-### run.sh
+## run.sh
 EXECUTABLE_PATH="build/Gomoku"
 
 echo "Running CMake..."
