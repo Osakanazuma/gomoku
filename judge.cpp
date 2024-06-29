@@ -114,5 +114,5 @@ bool Judge::draw_judge(int m_masu[Y_NUMBER][X_NUMBER])
         std::cout << "draw" << std::endl;
         return true;
     }
-    return false; // Add a return statement for the case when the condition is not met.
+    return false; 
 }
