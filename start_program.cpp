@@ -17,13 +17,11 @@ void StartProgram::game()
             if (m_keyboard.my_kbhit())
             {
                 int key = getchar();
-                if (key == 'w' || key == 's' || key == 'a' || key == 'd')
-                {
-                    temp = m_gomoku.move(key);
-                    std::cout << "\033[2J\033[1;1H"; // ユーザーがキーを押すたびに画面をクリア
-                    m_gomoku.masume(player);
-                }
-                else if (key == ' ' || key == '\n') // ここを変更: enterキーを追加
+                temp = m_gomoku.move(key);
+                std::cout << "\033[2J\033[1;1H"; // ユーザーがキーを押すたびに画面をクリア
+                m_gomoku.masume(player);
+                
+                if (key == ' ' || key == '\n') // ここを変更: enterキーを追加
                 {
                     if (m_gomoku.m_masu[temp.py][temp.px] == 0)
                     {

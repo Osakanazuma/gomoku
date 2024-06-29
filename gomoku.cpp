@@ -11,7 +11,7 @@ Gomoku::Gomoku()
             m_masu[i][j] = 0;
         }
     }
-    
+
     x = 0;
     y = 0;
 }
