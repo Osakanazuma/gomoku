@@ -19,8 +19,7 @@ private:
     Judge m_judge;
     Keyboard m_keyboard;
     gomoku_p temp;
-    
-    int col, line;
+
     int player;
 
 public:

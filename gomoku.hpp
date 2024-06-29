@@ -22,7 +22,6 @@ private:
     int x = 0, y = 0;   
 public:
     int m_masu[Y_NUMBER][X_NUMBER] = {{0}};
-    int m_return[2];
     Gomoku();
     void masume(int time);
     gomoku_p move(int key);

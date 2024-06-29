@@ -9,6 +9,7 @@ constexpr int KEY_SPACE = ' ';
 
 Keyboard::Keyboard(/* args */)
 {
+    key = 0;
 }
 
 Keyboard::~Keyboard()
