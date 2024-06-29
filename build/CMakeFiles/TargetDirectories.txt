@@ -1,0 +1,3 @@
+/home/iwatakazuma/ドキュメント/gomoku/build/CMakeFiles/Gomoku.dir
+/home/iwatakazuma/ドキュメント/gomoku/build/CMakeFiles/edit_cache.dir
+/home/iwatakazuma/ドキュメント/gomoku/build/CMakeFiles/rebuild_cache.dir
