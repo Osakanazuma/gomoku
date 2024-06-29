@@ -20,7 +20,7 @@ void StartProgram::game()
                 if (key == 'w' || key == 's' || key == 'a' || key == 'd')
                 {
                     temp = m_gomoku.move(key);
-                    system("clear"); // ユーザーがキーを押すたびに画面をクリア
+                    std::cout << "\033[2J\033[1;1H"; // ユーザーがキーを押すたびに画面をクリア
                     m_gomoku.masume(player);
                 }
                 else if (key == ' ' || key == '\n') // ここを変更: enterキーを追加
@@ -34,7 +34,7 @@ void StartProgram::game()
         }
         
         m_gomoku.dainyuu(temp.py, temp.px);
-        system("clear"); // 盤面が更新されるたびに画面をクリア
+        std::cout << "\033[2J\033[1;1H"; // 盤面が更新されるたびに画面をクリア
         m_gomoku.masume(player);
         if( m_judge.win_judge(player,m_gomoku.m_masu)|| m_judge.draw_judge(m_gomoku.m_masu))
         {
