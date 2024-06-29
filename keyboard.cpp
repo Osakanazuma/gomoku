@@ -7,7 +7,7 @@ constexpr int KEY_A = 97;
 constexpr int KEY_D = 100;
 constexpr int KEY_SPACE = ' ';
 
-Keyboard::Keyboard(/* args */)
+Keyboard::Keyboard()
 {
     key = 0;
 }

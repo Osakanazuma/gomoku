@@ -15,7 +15,7 @@ private:
     Gomoku gomokukey;
 
 public:
-    Keyboard(/* args */);
+    Keyboard();
     ~Keyboard();
 
     bool my_kbhit(void);

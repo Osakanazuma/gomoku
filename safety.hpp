@@ -10,7 +10,7 @@ class safety
 private:
     struct termios tty;
 public:
-    safety(/* args */);
+    safety();
     ~safety();
     void reset_terminal_settings();
 };
