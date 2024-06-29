@@ -1,10 +1,10 @@
+# gomoku
 これは五目並べのコードです。
 linux環境でしか、操作確認をしていませんが他のOSでも動かせるはずです。
 ファイルの量が多いのでcmakeを使うことをおすすめします。
 そして、シェルをつかうととても楽でいいですよ^^
 
-例
-cmake.sh
+## cmake.sh
 PROJECT_DIR="../gomoku"
 BUILD_DIR="$PROJECT_DIR/build"
 
@@ -22,7 +22,7 @@ else
     echo "Build failed!"
 fi
 
-run.sh
+### run.sh
 EXECUTABLE_PATH="build/Gomoku"
 
 echo "Running CMake..."
